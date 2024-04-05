@@ -1,11 +1,21 @@
 fun calculateCommission(salesAmount: Double): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val commission = salesAmount * 4/100
+    return commission
 }
 
 fun calculateFinalSalary(baseSalary: Double, commission: Double): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val finalSalary = baseSalary + commission
+    return finalSalary
 }
 
 fun main() {
-    TODO("Use essa função para rodar o codigo principal")
+    println("Digite o valor do seu salário fixo: ")
+    val baseSalary = readln().toDouble()
+
+    println("Digite o valor das suas vendas: ")
+    val sales = readln().toDouble()
+    val commission = calculateCommission(sales)
+    val finalSalary = calculateFinalSalary(baseSalary, commission)
+
+    println("Sua comissão foi de R$ $commission e seu salário final foi de R$ $finalSalary")
 }
