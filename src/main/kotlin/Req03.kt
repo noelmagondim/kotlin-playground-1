@@ -18,7 +18,8 @@ fun calculateDays(birthYear: Int, currentYear: Int): Long {
 }
 
 fun calculateWeeks(birthYear: Int, currentYear: Int): Long {
-    TODO("Use essa função para desenvolver sua lógica")
+    val weeks = calculateDays(birthYear, currentYear) / 7
+    return weeks
 }
 
 fun main() {
