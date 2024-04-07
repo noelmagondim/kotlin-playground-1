@@ -4,7 +4,8 @@ fun calculateAverage(number1: Double, number2: Double): Double {
 }
 
 fun calculateDifference(number1: Double, number2: Double): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val difference = number1 - number2
+    return difference
 }
 
 fun calculateProduct(number1: Double, number2: Double): Double {
