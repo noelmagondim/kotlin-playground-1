@@ -4,7 +4,8 @@ fun calculateYears(birthYear: Int, currentYear: Int): Int {
 }
 
 fun calculateMonths(birthYear: Int, currentYear: Int): Int {
-    TODO("Use essa função para desenvolver sua lógica")
+    val months = calculateYears(birthYear, currentYear) * 12
+    return months
 }
 
 fun calculateDays(birthYear: Int, currentYear: Int): Long {
