@@ -9,7 +9,12 @@ fun calculateMonths(birthYear: Int, currentYear: Int): Int {
 }
 
 fun calculateDays(birthYear: Int, currentYear: Int): Long {
-    TODO("Use essa função para desenvolver sua lógica")
+    val year = calculateYears(birthYear, currentYear)
+    val leapYear = year / 4
+    val normalYear = year - leapYear
+    val month = (calculateMonths(birthYear, currentYear) / 12).toLong()
+    val days = (month * 31 * 7) + (month * 30 * 4) + (leapYear * 29) + (normalYear * 28)
+    return days
 }
 
 fun calculateWeeks(birthYear: Int, currentYear: Int): Long {
