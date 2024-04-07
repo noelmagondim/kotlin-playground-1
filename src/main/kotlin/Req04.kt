@@ -9,7 +9,8 @@ fun calculateDifference(number1: Double, number2: Double): Double {
 }
 
 fun calculateProduct(number1: Double, number2: Double): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val product = number1 * number2
+    return product
 }
 
 fun calculateDivision(number1: Double, number2: Double): Double? {
