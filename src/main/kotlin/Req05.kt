@@ -3,5 +3,8 @@ fun calculateConsumerPrice(factoryCost: Double): Double {
 }
 
 fun main() {
-    TODO("Use essa função para rodar o codigo principal")
+    println("Digite o preço de fábrica: ")
+    val factoryCost = readln().toDouble()
+    val finalCost = calculateConsumerPrice(factoryCost)
+    println("O preço final é: $finalCost")
 }
