@@ -15,5 +15,19 @@ fun calculateWeeks(birthYear: Int, currentYear: Int): Long {
 }
 
 fun main() {
-    TODO("Use essa função para rodar o codigo principal")
+    println("Digite o ano do seu nascimento: ")
+    val birthYear = readln().toInt()
+
+    println("Digite o ano atual: ")
+    val currentYear = readln().toInt()
+
+    val years = calculateYears(birthYear, currentYear)
+    val months = calculateMonths(birthYear, currentYear)
+    val days = calculateDays(birthYear, currentYear)
+    val weeks = calculateWeeks(birthYear, currentYear)
+
+    println("Sua idade em anos é $years")
+    println("Sua idade em meses é $months")
+    println("Sua idade em dias é $days")
+    println("Sua idade em semanas é $weeks")
 }
