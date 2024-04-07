@@ -1,5 +1,6 @@
 fun calculateAverage(number1: Double, number2: Double): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val average = (number1 + number2) / 2
+    return average
 }
 
 fun calculateDifference(number1: Double, number2: Double): Double {
