@@ -41,6 +41,14 @@ fun main() {
         1.0 -> println("A média é $average")
         2.0 -> println("A diferença é $difference")
         3.0 -> println("O produto é $product")
-        4.0 -> println("A divisão é $division")
+        4.0 -> {
+            if (division != null){
+                println("A divisão é $division")
+            } else {
+                println("Não é possível dividir por zero")
+            }
+
+        }
+        else -> println("Opção inválida")
     }
 }
