@@ -1,5 +1,8 @@
 fun calculateAverage(ages: List<Int>): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val numbers = ages
+    val sum = numbers.reduce { acc, numero -> (acc + numero) }
+    val average = sum / 5
+    return average.toDouble()
 }
 
 fun countPeopleWeightHeight(weights: List<Double>, heights: List<Double>): Int {
@@ -11,5 +14,8 @@ fun calculatePercentageAgeHeight(ages: List<Int>, heights: List<Double>): Int {
 }
 
 fun main() {
-    TODO("Use essa função para rodar o codigo principal")
+    val ages = listOf(25, 30, 35, 40, 45)
+    val average = calculateAverage(ages)
+    println("Média das idades 25, 30, 35, 40, 45: $average")
+
 }
