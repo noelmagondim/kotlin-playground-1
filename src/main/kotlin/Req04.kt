@@ -4,7 +4,7 @@ fun calculateAverage(number1: Double, number2: Double): Double {
 }
 
 fun calculateDifference(number1: Double, number2: Double): Double {
-    val difference = number1 - number2
+    val difference = if (number1 < number2) (number2 - number1) else (number1 - number2)
     return difference
 }
 
@@ -26,10 +26,10 @@ fun main() {
     val number2 = readln().toDouble()
 
     println("Escolha o número da função que deseja implementar:")
-    println("1 - Média entre os números digitados" +
-            "2 - Diferença do maior pelo menor" +
-            "3 - Produto entre os números digitados" +
-            "4 - Divisão do primeiro pelo segundo")
+    println("1 - Média entre os números digitados")
+    println("2 - Diferença do maior pelo menor")
+    println("3 - Produto entre os números digitados")
+    println("4 - Divisão do primeiro pelo segundo")
     val choise = readln().toDouble()
 
     val average = calculateAverage(number1, number2)
