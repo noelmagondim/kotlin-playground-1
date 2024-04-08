@@ -1,11 +1,13 @@
 fun calculateSumEven(numbers: List<Int>): Int {
     val even = numbers.filter { it % 2 == 0 }
     val sum = even.reduce { acc, number -> (acc + number)}
-    return sum.toInt()
+    return sum
 }
 
 fun calculateSumOdd(numbers: List<Int>): Int {
-    TODO("Use essa função para desenvolver sua lógica")
+    val odd = numbers.filter { it % 2 != 0 }
+    val sum = odd.reduce { acc, number -> (acc + number)}
+    return sum
 }
 
 fun main() {
@@ -13,7 +15,7 @@ fun main() {
     val inputNumbers= readln()
     val numbers = inputNumbers.split(" ").map { it.toInt() }
     val sumEven = calculateSumEven(numbers)
-    // val sumOdd = calculateSumOdd(numbers)
+    val sumOdd = calculateSumOdd(numbers)
     println("A soma dos números pares é: $sumEven")
-    // println("A soma dos números impares é: $sumOdd")
+    println("A soma dos números impares é: $sumOdd")
 }
