@@ -11,5 +11,13 @@ fun findMultiplesOf2And3(numbers: IntArray): List<Int> {
 }
 
 fun main() {
-    TODO("Use essa função para rodar o codigo principal")
+    println("Informe 15 números separados por espaço: ")
+    val numbers = readln().split(" ").map { it.toInt() }.toIntArray()
+    val listMult2 = findMultiplesOf2(numbers)
+    val listMult3 = findMultiplesOf3(numbers)
+    val listMult23 = findMultiplesOf2And3(numbers)
+
+    println("Números múltiplos de 02: $listMult2")
+    println("Números múltiplos de 03: $listMult3")
+    println("Números múltiplos de 03: $listMult23")
 }
