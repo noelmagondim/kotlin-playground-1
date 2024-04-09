@@ -1,11 +1,20 @@
 fun countNegativeNumbers(numbers: List<Double>): Int {
-    TODO("Use essa função para desenvolver sua lógica")
+    return numbers.count{ it < 0.0 }
 }
 
 fun calculateSumOfPositiveNumbers(numbers: List<Double>): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    val positiveNumbers = numbers.filter { it % 2 == 0.0 }
+    val sum = positiveNumbers.reduce{ acc, number -> (acc + number) }
+    return sum
 }
 
 fun main() {
-    TODO("Use essa função para rodar o codigo principal")
+    println("Infome 10 números reais separados por espaço")
+    val numbers = readln().split(" ").map { it.toDouble() }
+
+    val countNegativeNumbers = countNegativeNumbers(numbers)
+    val sumPositiveNumbers = calculateSumOfPositiveNumbers(numbers)
+
+    println("A quantidade de negativos é: $countNegativeNumbers")
+    println("A soma de positivos é $sumPositiveNumbers")
 }
