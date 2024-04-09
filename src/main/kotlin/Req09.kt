@@ -1,5 +1,13 @@
 fun calculateFinalPrice(carValue: Double, installment: Int, surcharges: Array<Double>): Double {
-    TODO("Use essa função para desenvolver sua lógica")
+    return when (installment) {
+        1 -> (carValue - carValue * 0.2)
+        12 -> (carValue * surcharges[0]) + carValue
+        24 -> (carValue * surcharges[1]) + carValue
+        36 -> (carValue * surcharges[2]) + carValue
+        48 -> (carValue * surcharges[3]) + carValue
+        60 -> (carValue * surcharges[4]) + carValue
+        else -> 0.0
+    }
 }
 
 fun main() {
