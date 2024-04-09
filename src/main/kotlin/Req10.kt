@@ -1,13 +1,16 @@
 fun findMultiplesOf2(numbers: IntArray): List<Int> {
-    TODO("Use essa função para desenvolver sua lógica")
+    val listMult2 = numbers.filter { it % 2 == 0 }
+    return listMult2
 }
 
 fun findMultiplesOf3(numbers: IntArray): List<Int> {
-    TODO("Use essa função para desenvolver sua lógica")
+    val listMult3 = numbers.filter { it % 3 == 0 }
+    return listMult3
 }
 
 fun findMultiplesOf2And3(numbers: IntArray): List<Int> {
-    TODO("Use essa função para desenvolver sua lógica")
+    val listMult23 = numbers.filter { it % 2 == 0 && it % 3 == 0 }
+    return listMult23
 }
 
 fun main() {
@@ -19,5 +22,5 @@ fun main() {
 
     println("Números múltiplos de 02: $listMult2")
     println("Números múltiplos de 03: $listMult3")
-    println("Números múltiplos de 03: $listMult23")
+    println("Números múltiplos de 02 e 03: $listMult23")
 }
